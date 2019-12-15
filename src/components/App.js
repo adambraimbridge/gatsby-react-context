@@ -8,8 +8,8 @@ import { LoadingUI } from './LoadingUI'
 export const App = () => {
 	return (
 		<ContextProvider>
-			<LoadingUI />
 			<h1>Goldbug Club</h1>
+			<LoadingUI />
 			<AuthenticationUI />
 			<Home />
 		</ContextProvider>

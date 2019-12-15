@@ -1,23 +1,18 @@
 import React from 'react'
 import { Context } from './Context'
-import { SignOutButton } from './AuthenticationUI'
+import { SignInButton } from './AuthenticationUI'
 
 export const Home = () => {
 	const { state } = React.useContext(Context)
 	const { authenticatedUser } = state || {}
 
 	if (authenticatedUser) {
-		return (
-			<>
-				<p>Welcome</p>
-				<SignOutButton />
-			</>
-		)
+		return <p>Welcome</p>
 	} else {
 		return (
 			<>
 				<p>Please auth</p>
-				<button>Sign in</button>
+				<SignInButton />
 			</>
 		)
 	}

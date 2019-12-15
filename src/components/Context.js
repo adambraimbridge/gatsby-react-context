@@ -6,6 +6,7 @@ const reducer = (state = {}, payload) => {
 }
 
 export const Context = React.createContext()
+
 export const ContextProvider = ({ children }) => {
 	const [state, setState] = React.useReducer(reducer)
 	return (

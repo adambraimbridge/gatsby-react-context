@@ -12,6 +12,8 @@ export const SignOutButton = () => {
 	)
 }
 
+export const SignInButton = () => <button>Sign in</button>
+
 export const AuthenticationUI = () => {
 	const { state, setState } = React.useContext(Context)
 	const { authenticatedUser } = state || {}
@@ -25,6 +27,6 @@ export const AuthenticationUI = () => {
 	if (authenticatedUser) {
 		return <SignOutButton />
 	} else {
-		return <button>Sign in</button>
+		return <SignInButton />
 	}
 }
