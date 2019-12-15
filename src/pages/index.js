@@ -1,6 +1,3 @@
 import React from 'react'
-import '../style/index.scss'
-
-export default () => {
-	return <h1>Goldbug Club</h1>
-}
+import { App } from '../components/App'
+export default () => <App />
