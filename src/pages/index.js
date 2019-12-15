@@ -1,17 +1,6 @@
-import React from "react"
-import { StateProvider, reducer } from "../lib/state"
-import { Home } from "./home"
-import { GoButton } from "../components/GoButton"
+import React from 'react'
+import '../style/index.scss'
 
 export default () => {
-  const initialState = {
-    count: 0,
-  }
-
-  return (
-    <StateProvider reducer={reducer} initialState={initialState}>
-      <GoButton />
-      <Home />
-    </StateProvider>
-  )
+	return <h1>Goldbug Club</h1>
 }
